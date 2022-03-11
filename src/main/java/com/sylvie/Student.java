@@ -8,7 +8,8 @@ public class Student {
         this.name = name;
     }
     public Student(String name, int english, int maths){
-        this.name =name;
+        //this.name =name;
+        this(name);
         this.english = english;
         this.maths = maths;
     }
@@ -28,5 +29,9 @@ public class Student {
             System.out.print("*");
         }
         System.out.println();
+    }
+
+    public int getAverage() {
+        return((english+maths)/2);
     }
 }
