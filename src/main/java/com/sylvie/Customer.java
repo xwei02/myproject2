@@ -1,0 +1,22 @@
+package com.sylvie;
+//一般客戶 - 滿千送百
+//銀級客戶 - 滿千送百, 再送百元還原金
+//金級客戶 - 滿千送二百, 再送二百還原金
+//0001 1200 1100
+//0002  800  800
+//0003 2000 1800(200) <--銀級客戶
+//0004 5000 4000(1000)<--金級會員
+
+public class Customer {
+    public static void main(String[] args) {
+        NormalCustomer c1 = new NormalCustomer("0001", 1200);
+        NormalCustomer c2 = new NormalCustomer("0002", 800);
+        SilverCustomer c3 = new SilverCustomer("0003", 2000);
+        GoldenCustomer c4 = new GoldenCustomer("0004", 5000);
+
+        c1.print();
+        c2.print();
+        c3.print();
+        c4.print();
+    }
+}
