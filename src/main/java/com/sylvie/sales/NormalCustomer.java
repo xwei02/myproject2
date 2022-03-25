@@ -1,4 +1,4 @@
-package com.sylvie;
+package com.sylvie.sales;
 
 public class NormalCustomer {
     String name;

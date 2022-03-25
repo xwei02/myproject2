@@ -1,4 +1,4 @@
-package com.sylvie;
+package com.sylvie.score;
 
 public class GraduateStudent extends Student {
     int thesis;

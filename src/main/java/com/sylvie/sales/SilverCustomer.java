@@ -1,4 +1,4 @@
-package com.sylvie;
+package com.sylvie.sales;
 
 public class SilverCustomer extends NormalCustomer{
     int GiveMoney;

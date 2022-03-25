@@ -1,4 +1,4 @@
-package com.sylvie;
+package com.sylvie.score;
 
 public class ScoringNG {
     public static void main(String[] args) {
