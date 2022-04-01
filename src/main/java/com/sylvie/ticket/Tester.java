@@ -22,6 +22,8 @@ public class Tester {
                 start = Station.KAOHSIUNG_STATION;
                 break;
         }
+        System.out.println("Your destination station? (1: Taipei (2: Taichung (3: Kaohsiung");
+        choice = Integer.parseInt(scanner.next());
         Station destination = null;
         switch (choice){
             case 1:
@@ -34,7 +36,19 @@ public class Tester {
                 destination = Station.KAOHSIUNG_STATION;
                 break;
         }
-        System.out.println("Which kind of ticket?");
+        System.out.println("Which kind of ticket? 1)Normal Ticket 2)Student Ticket 3)Elder Ticket");
+        choice = Integer.parseInt(scanner.next());
+        switch (choice){
+            case 1 :
+                ticket = new Ticket(start,destination);
+                break;
+            case 2:
+                ticket = new StudentTicket(start,destination);
+            case  3:
+                ticket = new ElderTicket(start,destination);
+        }
+        ticket.print();
 
     }
+
 }
