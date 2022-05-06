@@ -1,9 +1,10 @@
 package com.sylvie.score;
 
-public class Student {
-    String name;
-    int english;
-    int maths;
+//修飾字(子) Modifier public/default(same package)/private/protected(子)
+public class Student implements Printable{
+    protected String name;
+    protected int english;
+    protected int maths;
     public Student(String name){
         this.name = name;
     }
@@ -21,6 +22,7 @@ public class Student {
 
 
     }
+    @Override
     public void print(){
         int average = (english+maths)/2;
         System.out.print(name + "\t" + english + "\t" +

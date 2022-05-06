@@ -1,6 +1,6 @@
 package com.sylvie.score;
 
-public class GraduateStudent extends Student {
+public class GraduateStudent extends Student implements Printable{
     int thesis;
 
     public GraduateStudent(String name, int english, int maths, int thesis) {
@@ -10,6 +10,7 @@ public class GraduateStudent extends Student {
         super(name, english, maths);
         this.thesis = thesis;
     }
+    @Override
     public void print() {
         System.out.print(name + "\t" + english + "\t" + maths +
                 "\t" + getAverage() + "\t" +thesis);
