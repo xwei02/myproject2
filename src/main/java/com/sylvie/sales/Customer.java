@@ -16,7 +16,7 @@ package com.sylvie.sales;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//Graphical User Interface, GUI
 public class Customer {
     public static void main(String[] args) {
         List<NormalCustomer> customers = new ArrayList<>();
